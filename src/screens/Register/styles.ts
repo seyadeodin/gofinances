@@ -2,6 +2,8 @@ import styled, { css } from 'styled-components/native';
 import { RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
+  flex: 1;
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
 `
 export const Header = styled.View`
   background-color: ${({theme}) => theme.COLORS.PRIMARY};
@@ -21,4 +23,20 @@ export const Title = styled.Text`
     font-family: ${theme.FONTS.REGULAR};
     color: ${theme.COLORS.SHAPE};
   `}
+`
+
+export const Form = styled.View`
+  flex: 1;
+  width: 100%;
+  justify-content: space-between;
+
+  padding: 24px;
+`
+
+export const Fields = styled.View`
+`
+
+export const TransactionsTypes = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
 `
