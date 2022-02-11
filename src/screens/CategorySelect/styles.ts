@@ -7,7 +7,7 @@ interface CategoryProps{
   isActive: boolean;
 }
 
-export const Container = styled(GestureHandlerRootView)`
+export const Container = styled.View`
   flex: 1;
   background-color: ${({theme}) => theme.COLORS.BACKGROUND};
 `
@@ -31,7 +31,7 @@ export const Title = styled.Text`
   `}
 `
 
-export const Category = styled(RectButton)<CategoryProps>`
+export const Category = styled.TouchableOpacity<CategoryProps>`
  width: 100%;
  padding: ${RFValue(15)}px;
 
