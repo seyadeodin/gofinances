@@ -3,7 +3,7 @@ import { Feather } from '@expo/vector-icons'
 import { RFValue } from 'react-native-responsive-fontsize'
 
 interface TransactionProps {
-  type: 'negative' | 'positive';
+  type: 'up' | 'down';
 }
 
 export const Container = styled.View`
@@ -29,7 +29,7 @@ export const Amount = styled.Text<TransactionProps>`
 
   ${({theme, type}) => css`
     font-family: ${theme.FONTS.REGULAR};
-    color: ${type === 'positive' ? theme.COLORS.SUCCESS : theme.COLORS.ATTENTION};
+    color: ${type === 'up' ? theme.COLORS.SUCCESS : theme.COLORS.ATTENTION};
   `}
 
 `

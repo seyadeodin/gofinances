@@ -31,7 +31,7 @@ export const Title = styled.Text`
   `}
 `
 
-export const Category = styled.TouchableOpacity<CategoryProps>`
+export const Category = styled(RectButton)<CategoryProps>`
  width: 100%;
  padding: ${RFValue(15)}px;
 
