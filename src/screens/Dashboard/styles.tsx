@@ -26,7 +26,7 @@ export const UserWrapper = styled.View`
   width: 100%;
 
   padding: 0 24px;
-  margin-top: ${getStatusBarHeight() + RFValue(28)}px
+  margin-top: ${getStatusBarHeight() + RFValue(28)}px;
 
   flex-direction: row;
   justify-content: space-between;
@@ -62,7 +62,7 @@ export const UserName = styled.Text`
 `;
 
 export const Icon = styled(Feather)`
-  color: ${({ theme }) => theme.COLORS.SECONDARY}
+  color: ${({ theme }) => theme.COLORS.SECONDARY};
   font-size: ${RFValue(24)}px;
 `;
 
@@ -102,3 +102,9 @@ export const TransactionsList = styled(
 })``;
 
 export const LogoutButton = styled.TouchableWithoutFeedback``
+
+export const LoadContainer = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+`
