@@ -22,9 +22,9 @@ import {
   Title,
   TransactionsList,
   LogoutButton,
-  LoadContainer,
 } from './styles';
 import { Alert } from 'react-native';
+import { Load } from '../../components/Load';
 
 export interface DataListProps extends TransactionCardProps {
   id: string;
@@ -150,7 +150,7 @@ export function Dashboard(){
   return(
     <Container>
     {
-      loading ? <LoadContainer><ActivityIndicator color={COLORS.PRIMARY} size={25}/></LoadContainer> :  
+      loading ? <Load/> :
       <>
         <Header>
           <UserWrapper>

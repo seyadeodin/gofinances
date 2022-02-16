@@ -89,6 +89,7 @@ export const Transactions = styled.View`
 export const Title = styled.Text`
   font-size: ${RFValue(18)}px;
   font-family: ${({theme}) => theme.FONTS.REGULAR};
+  color: ${({theme}) => theme.COLORS.TITLE};
   
   margin-bottom: 16px;
 `
@@ -102,9 +103,3 @@ export const TransactionsList = styled(
 })``;
 
 export const LogoutButton = styled.TouchableWithoutFeedback``
-
-export const LoadContainer = styled.View`
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-`
