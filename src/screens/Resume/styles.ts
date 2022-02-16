@@ -24,3 +24,8 @@ export const Title = styled.Text`
     color: ${theme.COLORS.SHAPE};
   `}
 `
+export const Content = styled.ScrollView`
+  flex: 1;
+  padding: 24px;
+
+`
